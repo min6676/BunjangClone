@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SubCategoryFooterView" customModule="BunjangClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKs-QI-R8K">
+                    <rect key="frame" x="0.0" y="0.0" width="463" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94Q-TM-PP4">
+                            <rect key="frame" x="185.5" y="7" width="92" height="36"/>
+                            <state key="normal" image="expand"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="94Q-TM-PP4" firstAttribute="centerX" secondItem="QKs-QI-R8K" secondAttribute="centerX" id="KCW-mm-hew"/>
+                        <constraint firstItem="94Q-TM-PP4" firstAttribute="top" secondItem="QKs-QI-R8K" secondAttribute="top" constant="7" id="NJA-8L-l9W"/>
+                        <constraint firstAttribute="bottom" secondItem="94Q-TM-PP4" secondAttribute="bottom" constant="7" id="hox-Ji-ywp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="QKs-QI-R8K" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Om9-xH-x2m"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="QKs-QI-R8K" secondAttribute="trailing" id="jgc-NU-7vm"/>
+                <constraint firstAttribute="bottom" secondItem="QKs-QI-R8K" secondAttribute="bottom" id="loU-U1-14b"/>
+                <constraint firstItem="QKs-QI-R8K" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="q22-Pf-tjr"/>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="94Q-TM-PP4" id="IVu-3Z-Vod"/>
+            </connections>
+            <point key="canvasLocation" x="241.30434782608697" y="69.642857142857139"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="expand" width="92" height="33"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Talk View Controller-->
+        <scene sceneID="T4H-1S-cem">
+            <objects>
+                <viewController id="92Z-mK-msc" customClass="TalkViewController" customModule="BunjangClone" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zDZ-6f-yq5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="talkImage" translatesAutoresizingMaskIntoConstraints="NO" id="BYg-82-v7j">
+                                <rect key="frame" x="0.0" y="88" width="414" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="FdK-bT-ar2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pSY-9H-f1U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BYg-82-v7j" firstAttribute="leading" secondItem="pSY-9H-f1U" secondAttribute="leading" id="6wW-v3-YBw"/>
+                            <constraint firstItem="pSY-9H-f1U" firstAttribute="trailing" secondItem="BYg-82-v7j" secondAttribute="trailing" id="OVu-JM-gc4"/>
+                            <constraint firstItem="BYg-82-v7j" firstAttribute="top" secondItem="pSY-9H-f1U" secondAttribute="top" id="dCB-Cr-hqK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8LN-P4-0XR">
+                        <barButtonItem key="leftBarButtonItem" title="번개톡" id="ahr-AC-xI7">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="62Z-Av-68s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339.1304347826087" y="141.96428571428569"/>
+        </scene>
+        <!--번개톡-->
+        <scene sceneID="a3R-uu-GMT">
+            <objects>
+                <navigationController storyboardIdentifier="TalkNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="x5K-aR-kpA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="번개톡" image="bolt.horizontal.circle" catalog="system" id="gN4-ZB-IdF"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ld1-5K-L05">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="92Z-mK-msc" kind="relationship" relationship="rootViewController" id="dL9-Hl-aaz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tlR-Xn-gwF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="428.98550724637687" y="141.96428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bolt.horizontal.circle" catalog="system" width="128" height="121"/>
+        <image name="talkImage" width="584" height="280"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

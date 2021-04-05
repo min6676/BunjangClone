@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="EG9-BM-XGT">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="Erx-AO-JYa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5ls-lp-H5a">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4uW-2H-fQa" kind="relationship" relationship="viewControllers" id="CzN-jC-vZ0"/>
+                        <segue destination="6B3-fA-Bs5" kind="relationship" relationship="viewControllers" id="3ND-Qf-hKW"/>
+                        <segue destination="fQl-9Z-MQw" kind="relationship" relationship="viewControllers" id="1MV-dC-Ysf"/>
+                        <segue destination="lcY-NQ-dAq" kind="relationship" relationship="viewControllers" id="nHW-wm-frZ"/>
+                        <segue destination="UPa-pi-34w" kind="relationship" relationship="viewControllers" id="bkJ-et-UJE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZF-JT-FGi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </scene>
+        <!--HomeNavigationController-->
+        <scene sceneID="DWm-Cz-0Ee">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeStoryBoard" referencedIdentifier="HomeNavigationController" id="4uW-2H-fQa" userLabel="HomeNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="item" id="dgp-xH-V7J"/>
+                    <navigationItem key="navigationItem" id="ocI-t1-eFe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UUx-XF-hgC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="-254"/>
+        </scene>
+        <!--FollowingNavigationController-->
+        <scene sceneID="fwP-36-iRL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FollowingStoryboard" referencedIdentifier="FollowingNavigationController" id="6B3-fA-Bs5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="item" id="iwG-hn-ERl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uR1-dy-2b5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="-170"/>
+        </scene>
+        <!--RegisterNavigationController-->
+        <scene sceneID="2dC-QX-2OU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegisterStoryboard" referencedIdentifier="RegisterNavigationController" id="fQl-9Z-MQw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="item" id="r5c-ru-R6q"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqy-c1-qeC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="-75"/>
+        </scene>
+        <!--TalkNavigationController-->
+        <scene sceneID="5UY-xK-G7s">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TalkStoryboard" referencedIdentifier="TalkNavigationController" id="lcY-NQ-dAq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="item" id="bsM-wP-LMR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j8L-wj-XoR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="-9"/>
+        </scene>
+        <!--MyShopNavigationController-->
+        <scene sceneID="Nav-Oj-WcG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyShopStoryboard" referencedIdentifier="MyShopNavigationController" id="UPa-pi-34w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="item" id="mSo-aO-XxA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grb-yb-DmA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="68"/>
+        </scene>
+    </scenes>
+</document>

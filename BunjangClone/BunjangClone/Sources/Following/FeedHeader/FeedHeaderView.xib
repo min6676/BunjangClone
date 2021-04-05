@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeedHeaderView" id="U6b-Vx-4bR" customClass="FeedHeaderView" customModule="BunjangClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EUK-Qi-yJv">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팔로잉상점 소식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xU-cy-dEE">
+                            <rect key="frame" x="20" y="14.5" width="108" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgo-DY-ioU">
+                            <rect key="frame" x="275" y="12.5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="Oge-hV-LRw"/>
+                                <constraint firstAttribute="height" constant="25" id="cQA-cE-ASS"/>
+                            </constraints>
+                            <state key="normal" image="twobytwo"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="7xU-cy-dEE" firstAttribute="centerY" secondItem="EUK-Qi-yJv" secondAttribute="centerY" id="1Wh-N8-wq0"/>
+                        <constraint firstItem="Wgo-DY-ioU" firstAttribute="centerY" secondItem="EUK-Qi-yJv" secondAttribute="centerY" id="1nB-8a-JJT"/>
+                        <constraint firstItem="7xU-cy-dEE" firstAttribute="leading" secondItem="EUK-Qi-yJv" secondAttribute="leading" constant="20" id="BVc-wb-toR"/>
+                        <constraint firstAttribute="trailing" secondItem="Wgo-DY-ioU" secondAttribute="trailing" constant="20" id="LNW-Sh-gDe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EUK-Qi-yJv" secondAttribute="bottom" id="Gi8-Vf-pzL"/>
+                <constraint firstItem="EUK-Qi-yJv" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="MVs-qW-PU5"/>
+                <constraint firstItem="EUK-Qi-yJv" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="ajH-TP-P72"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="EUK-Qi-yJv" secondAttribute="trailing" id="ixB-YO-CcZ"/>
+            </constraints>
+            <connections>
+                <outlet property="headerButton" destination="Wgo-DY-ioU" id="hMe-UH-3Bb"/>
+                <outlet property="headerLabel" destination="7xU-cy-dEE" id="qzp-wW-Bdh"/>
+            </connections>
+            <point key="canvasLocation" x="110" y="73"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="twobytwo" width="100" height="96"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

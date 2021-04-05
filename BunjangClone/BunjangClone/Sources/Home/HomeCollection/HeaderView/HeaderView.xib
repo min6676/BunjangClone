@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="U6b-Vx-4bR" customClass="HeaderView" customModule="BunjangClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="708" height="399"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23s-XO-9Fx">
+                    <rect key="frame" x="0.0" y="44" width="708" height="321"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainImage1" translatesAutoresizingMaskIntoConstraints="NO" id="ZrF-UC-UkW">
+                            <rect key="frame" x="0.0" y="5" width="708" height="180"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="180" id="hQi-fc-Zi8"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kpd-3n-27J">
+                            <rect key="frame" x="10" y="185" width="688" height="131"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LMy-XC-Ihd">
+                                    <rect key="frame" x="0.0" y="0.0" width="688" height="70"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJR-Gf-isL">
+                                            <rect key="frame" x="0.0" y="0.0" width="137.5" height="70"/>
+                                            <state key="normal" image="HomeButton1"/>
+                                        </button>
+                                        <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1O-2d-3df">
+                                            <rect key="frame" x="137.5" y="0.0" width="137.5" height="70"/>
+                                            <state key="normal" image="HomeButton2"/>
+                                        </button>
+                                        <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHq-ey-uUq">
+                                            <rect key="frame" x="275" y="0.0" width="138" height="70"/>
+                                            <state key="normal" image="HomeButton3"/>
+                                        </button>
+                                        <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iep-VG-O7j">
+                                            <rect key="frame" x="413" y="0.0" width="137.5" height="70"/>
+                                            <state key="normal" image="HomeButton4"/>
+                                        </button>
+                                        <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t55-8k-yxW">
+                                            <rect key="frame" x="550.5" y="0.0" width="137.5" height="70"/>
+                                            <state key="normal" image="HomeButton5"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="VaI-TF-Fut"/>
+                                    </constraints>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 상품 추천" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="AvG-Wq-MPA">
+                                    <rect key="frame" x="0.0" y="85" width="688" height="46"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ZrF-UC-UkW" firstAttribute="leading" secondItem="23s-XO-9Fx" secondAttribute="leading" id="5vZ-eR-Kon"/>
+                        <constraint firstAttribute="bottom" secondItem="Kpd-3n-27J" secondAttribute="bottom" constant="5" id="RRm-Td-iIG"/>
+                        <constraint firstItem="Kpd-3n-27J" firstAttribute="leading" secondItem="23s-XO-9Fx" secondAttribute="leading" constant="10" id="Vt4-LX-9Fn"/>
+                        <constraint firstAttribute="trailing" secondItem="ZrF-UC-UkW" secondAttribute="trailing" id="Vwz-fq-Xq2"/>
+                        <constraint firstAttribute="trailing" secondItem="Kpd-3n-27J" secondAttribute="trailing" constant="10" id="YqS-bI-ADu"/>
+                        <constraint firstItem="Kpd-3n-27J" firstAttribute="top" secondItem="ZrF-UC-UkW" secondAttribute="bottom" id="e5R-yq-MjW"/>
+                        <constraint firstItem="ZrF-UC-UkW" firstAttribute="top" secondItem="23s-XO-9Fx" secondAttribute="top" constant="5" id="ttW-im-pcs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="23s-XO-9Fx" secondAttribute="trailing" id="JLJ-bJ-Bg4"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="23s-XO-9Fx" secondAttribute="bottom" id="Joq-Ud-mQc"/>
+                <constraint firstItem="23s-XO-9Fx" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="PT9-Sh-Pmw"/>
+                <constraint firstItem="23s-XO-9Fx" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="xFC-E7-YbU"/>
+            </constraints>
+            <connections>
+                <outletCollection property="buttons" destination="cJR-Gf-isL" collectionClass="NSMutableArray" id="B7H-Xf-b5o"/>
+                <outletCollection property="buttons" destination="l1O-2d-3df" collectionClass="NSMutableArray" id="6oF-i0-IvD"/>
+                <outletCollection property="buttons" destination="cHq-ey-uUq" collectionClass="NSMutableArray" id="Leb-Qc-WaM"/>
+                <outletCollection property="buttons" destination="Iep-VG-O7j" collectionClass="NSMutableArray" id="3Cn-cw-9zR"/>
+                <outletCollection property="buttons" destination="t55-8k-yxW" collectionClass="NSMutableArray" id="DWd-yX-MuZ"/>
+            </connections>
+            <point key="canvasLocation" x="-228.98550724637684" y="-175.78125"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="HomeButton1" width="250" height="250"/>
+        <image name="HomeButton2" width="250" height="250"/>
+        <image name="HomeButton3" width="250" height="250"/>
+        <image name="HomeButton4" width="250" height="250"/>
+        <image name="HomeButton5" width="111" height="118"/>
+        <image name="MainImage1" width="500" height="222"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
